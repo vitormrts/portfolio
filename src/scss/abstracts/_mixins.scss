@@ -1,0 +1,23 @@
+@mixin reset-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin responsive-desktop {
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}

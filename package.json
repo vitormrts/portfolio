@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vitormrts/portfolio",
+  "author": "vitormrts <vitormartinscruz@usp.br>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn live-server",
+    "watch": "yarn sass --watch src/scss:src/css"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.48.0"
+  }
+}
