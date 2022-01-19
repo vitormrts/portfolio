@@ -13,36 +13,139 @@
   <header id="header" class="wrapper">
     <div class="container">
       <nav>
-        <a href="/">
+        <a aria-label="Ir para home" href="/">
           <img src="./src/images/html-tag.png" alt="HTML Tag">
           Vitor Martins</a>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a aria-label="Ver área sobre" href="#about">About</a></li>
+          <li><a aria-label="Ver projetos" href="#projects">Projects</a></li>
+          <li><a aria-label="Ver serviços" href="#services">Services</a></li>
+          <li><a aria-label="Ver skills" href="#skills">Skills</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main id="main">
-    <section class="presentation">
+    <section id="presentation">
       <div class="container">
         <div class="info">
-          <h1>Hi, I'm a <span>Web Developer :)</span></h1>
-          <p>I am Vitor Martins, a front-end developer</p>
+          <h1>Hi, I'm <span> Vitor Martins</span></h1>
+          <p>Front-end Developer</p>
         </div>
         <div class="image-wrapper">
-          <img src="./src/icons/front-end-logo-bw.svg" alt="Front-End">
+          <img src="./src/images/image.png" alt="Front-End">
         </div>
       </div>
       <div class="wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1D1D34" fill-opacity="1" d="M0,32L1440,128L1440,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+          <path fill="#1D1D34" fill-opacity="1" d="M0,32L1440,128L1440,0L0,0Z"></path>
+        </svg>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="description">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae accusamus necessitatibus minima repellendus facilis nostrum. Porro suscipit, exercitationem consequuntur repellendus facere, eligendi ea beatae consequatur possimus in repudiandae quisquam!</p>
+        </div>
+        <div class="contacts">
+          <div class="contact">
+            <div class="icon">
+              <img src="http://via.placeholder.com/48" alt="Email">
+            </div>
+            <div class="info">
+              <h3>Email</h3>
+              <a href="mailto:vitormartinscruz.dev@gmail.com" target="_blank">vitormartinscruz.dev@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="http://via.placeholder.com/48" alt="Telefone">
+            </div>
+            <div class="info">
+              <h3>Telephone</h3>
+              <a href="tel:+55(13)996582827">(13) 99758-2827</a>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="http://via.placeholder.com/48" alt="LinkedIn">
+            </div>
+            <div class="info">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/vitor-martins-cruz-b42567203/" target="_blank">Vitor Martins</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+          <path fill="#161628" fill-opacity="1" d="M0,0L1440,128L1440,0L0,0Z"></path>
+        </svg>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-image">
+              <img src="http://via.placeholder.com/300x150" alt="Project">
+            </div>
+            <div class="project-description">
+              <h3>Project Name</h3>
+              <p>Tecnologias: <span>HTML, CSS e JS</span></p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="http://via.placeholder.com/300x150" alt="Project">
+            </div>
+            <div class="project-description">
+              <h3>Project Name</h3>
+              <p>Tecnologias: <span>HTML, CSS e JS</span></p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="http://via.placeholder.com/300x150" alt="Project">
+            </div>
+            <div class="project-description">
+              <h3>Project Name</h3>
+              <p>Tecnologias: <span>HTML, CSS e JS</span></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer id="footer">
-
+    <div class="container">
+      <div class="rights">
+        <h1><span>&#169; 2022 </span>Vitor Martins</h1>
+        <small>All rights reserved</small>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a aria-label="Ver GitHub" href="https://github.com/vitormrts" target="_blank">
+              <img src="./src/images/github.png" alt="GitHub">
+            </a>
+          </li>
+          <li>
+            <a aria-label="Ver LinkedIn"  href="https://www.linkedin.com/in/vitor-martins-cruz-b42567203/" target="_blank">
+              <img src="./src/images/linkedin.png" alt="LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a aria-label="Enviar E-mail" href="mailto:vitormartinscruz.dev@gmail.com">
+              <img src="./src/images/email.png" alt="Email">
+            </a>
+          </li>
+        </ul>
+      </div>
   </footer>
 </body>
 </html>

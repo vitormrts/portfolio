@@ -1,5 +1,6 @@
 html {
   background-color: #161628;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -147,6 +148,8 @@ h5, h6 {
   z-index: 999;
   height: 100px;
   top: 0;
+  display: flex;
+  align-items: center;
 }
 #header nav {
   display: flex;
@@ -204,38 +207,189 @@ h5, h6 {
   transform: scaleX(1);
 }
 
+#footer {
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+#footer .rights h1 {
+  font-size: 16px;
+  color: #EAEAEA;
+}
+#footer .rights small {
+  font-size: 12px;
+  color: #EAEAEA;
+}
+#footer .social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+#footer .social-media ul li img {
+  width: 28px;
+  height: 28px;
+}
+
 #main {
   margin-top: 100px;
 }
 
-#main .presentation {
+#main h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e94560;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#main #presentation {
   background-color: #1D1D34;
   padding-bottom: 0;
 }
-#main .presentation .info h1 {
+#main #presentation .info h1 {
   font-size: 48px;
   font-weight: bold;
   color: #e94560;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   letter-spacing: 2px;
 }
-#main .presentation .info p {
+#main #presentation .info p {
   letter-spacing: 1.2px;
   font-size: 18px;
+  color: #EAEAEA;
+  margin: 0;
 }
-#main .presentation .image-wrapper {
+#main #presentation .image-wrapper {
   min-width: 320px;
   min-height: 320px;
 }
-#main .presentation .image-wrapper img {
+#main #presentation .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#main .presentation .wave {
+#main #presentation .wave {
   height: 100%;
   width: 100%;
   background-color: #161628;
+}
+#main #about {
+  padding-bottom: 0;
+}
+#main #about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+#main #about .description {
+  margin-bottom: 72px;
+}
+#main #about .description p {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  color: #EAEAEA;
+  line-height: 24px;
+}
+#main #about .contacts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#main #about .contacts .contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main #about .contacts .contact .icon {
+  width: 64px;
+  height: 64px;
+  background-color: #e94560;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+#main #about .contacts .contact .icon img {
+  width: 32px;
+  height: 32px;
+}
+#main #about .contacts .contact .info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e94560;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#main #about .contacts .contact .info a {
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 2px 0;
+  color: #EAEAEA;
+  margin: 0;
+  text-decoration: none;
+}
+#main #about .contacts .contact .info a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #e94560;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+#main #about .contacts .contact .info a:hover:after {
+  width: 100%;
+}
+#main #about .wave {
+  height: 100%;
+  width: 100%;
+  background-color: #1D1D34;
+}
+#main #projects {
+  background-color: #1D1D34;
+}
+#main #projects .container {
+  flex-direction: column;
+}
+#main #projects .projects-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #projects .project {
+  background-color: #161628;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+#main #projects .project h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+#main #projects .project p {
+  font-weight: 300;
+  color: #EAEAEA;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  filter: brightness(0.8);
 }
 
 /*# sourceMappingURL=main.css.map */

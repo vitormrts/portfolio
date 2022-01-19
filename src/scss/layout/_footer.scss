@@ -1,5 +1,30 @@
-#header {
-  // padding: 1rem;
-  // background-color: #f5f5f5;
-  // border-top: 1px solid #e5e5e5;
+#footer {
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  .rights {
+    h1 {
+      font-size: 16px;
+      color: $platinum;
+    }
+    small {
+      font-size: 12px;
+      color: $platinum;
+    }
+  }
+  .social-media {
+    ul {
+      @include reset-list();
+      display: flex;
+      gap: 24px;
+      li {
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
 }
