@@ -246,6 +246,7 @@ h5, h6 {
   letter-spacing: 2px;
   text-align: center;
   margin-top: 0;
+  width: 100%;
 }
 #main #presentation {
   background-color: #1D1D34;
@@ -356,8 +357,8 @@ h5, h6 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 #main #projects a {
   text-decoration: none;
@@ -369,12 +370,14 @@ h5, h6 {
   padding: 20px 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 320px;
-  height: 240px;
+  width: 320px;
+  height: 250px;
   position: relative;
   transition: 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 #main #projects .project-image {
   position: relative;
@@ -426,6 +429,111 @@ h5, h6 {
     padding: 16px;
     max-width: 270px;
   }
+}
+#main #services .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main #technologies {
+  background-color: #1D1D34;
+}
+#main #technologies .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main #technologies .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 32px;
+  width: 100%;
+  grid-gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  #main #technologies .grid {
+    grid-template-columns: repeat(3, 220px);
+    grid-gap: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #main #technologies .grid {
+    grid-template-columns: repeat(2, 240px);
+    grid-gap: 32px;
+  }
+}
+#main #technologies a {
+  text-decoration: none;
+}
+#main #technologies .tech-card {
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  #main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
+    width: 240px;
+    height: 240px;
+  }
+}
+#main #technologies .tech-card-wrapper {
+  position: relative;
+  flex-direction: column;
+}
+#main #technologies .tech-card .face {
+  position: absolute;
+  background-color: #161628;
+  padding: 20px;
+}
+#main #technologies .tech-card .icon {
+  transform: rotateY(180deg);
+}
+#main #technologies .tech-card .icon img {
+  width: 100px;
+  height: 100px;
+}
+#main #technologies .tech-card .info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main #technologies .tech-card .info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+#main #technologies .tech-card .info p {
+  font-weight: 300;
+  color: #EAEAEA;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  filter: brightness(0.8);
+}
+#main #technologies .flip {
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=main.css.map */
