@@ -27,9 +27,6 @@
       img {
         margin-right: 24px;
       }
-      &:hover {
-        transform: translateY(-8px);
-      }
     }
     ul {
       @include reset-list();
@@ -58,7 +55,6 @@
             position: absolute;
           }
           &:hover {
-            // filter: brightness(0.7);
             &::after {
               transform: scaleX(1);
             }

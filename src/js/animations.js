@@ -4,4 +4,3 @@ techCards.forEach(card => {
     card.classList.toggle("flip");
   }) 
 })
-console.log(techCards);

@@ -128,11 +128,6 @@
       align-items: flex-start;
       justify-content: space-between;
     }
-    a {
-      text-decoration: none;
-      width: min-content;
-      margin: 50px 10px;
-    }
     .project {
       background-color: $xiketic;
       padding: 20px 15px;
@@ -146,6 +141,11 @@
       flex-direction: column;
       justify-content: start;
       align-items: center;
+      &-link {
+        text-decoration: none;
+        width: min-content;
+        margin: 50px 10px;
+      }
       &-image {
         position: relative;
         width: 260px;
@@ -196,6 +196,16 @@
         max-width: 270px;
       }
     }
+    a {
+      text-decoration: none;
+      color: $platinum;
+      transition: 0.2s;
+      font-size: 18px;
+      margin-top: 32px;
+      &:hover {
+        color: $paradise-pink;
+      }
+    }
   }
   #services {
     .container {
@@ -203,6 +213,51 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+    }
+    .grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .service-card {
+      width: 320px;
+      height: 100%;
+      background-color: $space-cadet;
+      padding: 32px;
+      min-height: 400px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      .icon {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+        img {
+          width: 72px;
+          height: 72px;
+        }
+      }
+      .description {
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+          color: $platinum;
+          margin-bottom: 16px;
+          letter-spacing: 2px;
+        }
+        p {
+          font-weight: 300;
+          color: $platinum;
+          letter-spacing: 1.2px;
+          line-height: 25px;
+          font-size: 14px;
+          filter: brightness(0.8);
+        }
+      }
     }
   }
   #technologies {
@@ -263,6 +318,10 @@
         position: absolute;
         background-color: $xiketic;
         padding: 20px;
+        transition: 0.2s;
+        &:hover {
+          filter: brightness(0.8);
+        }
       }
       .icon {
         transform: rotateY(180deg);

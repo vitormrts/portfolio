@@ -171,9 +171,6 @@ h5, h6 {
 #header nav > a img {
   margin-right: 24px;
 }
-#header nav > a:hover {
-  transform: translateY(-8px);
-}
 #header nav ul {
   list-style: none;
   margin: 0;
@@ -360,11 +357,6 @@ h5, h6 {
   align-items: flex-start;
   justify-content: space-between;
 }
-#main #projects a {
-  text-decoration: none;
-  width: min-content;
-  margin: 50px 10px;
-}
 #main #projects .project {
   background-color: #161628;
   padding: 20px 15px;
@@ -378,6 +370,11 @@ h5, h6 {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+#main #projects .project-link {
+  text-decoration: none;
+  width: min-content;
+  margin: 50px 10px;
 }
 #main #projects .project-image {
   position: relative;
@@ -430,11 +427,64 @@ h5, h6 {
     max-width: 270px;
   }
 }
+#main #projects a {
+  text-decoration: none;
+  color: #EAEAEA;
+  transition: 0.2s;
+  font-size: 18px;
+  margin-top: 32px;
+}
+#main #projects a:hover {
+  color: #e94560;
+}
 #main #services .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+#main #services .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+#main #services .service-card {
+  width: 320px;
+  height: 100%;
+  background-color: #1D1D34;
+  padding: 32px;
+  min-height: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+#main #services .service-card .icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+#main #services .service-card .icon img {
+  width: 72px;
+  height: 72px;
+}
+#main #services .service-card .description h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #EAEAEA;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+#main #services .service-card .description p {
+  font-weight: 300;
+  color: #EAEAEA;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+  font-size: 14px;
+  filter: brightness(0.8);
 }
 #main #technologies {
   background-color: #1D1D34;
@@ -504,6 +554,10 @@ h5, h6 {
   position: absolute;
   background-color: #161628;
   padding: 20px;
+  transition: 0.2s;
+}
+#main #technologies .tech-card .face:hover {
+  filter: brightness(0.8);
 }
 #main #technologies .tech-card .icon {
   transform: rotateY(180deg);
