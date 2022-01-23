@@ -44,19 +44,19 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .container {
     padding: 0 32px;
     max-width: 890px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .container {
     padding: 0 24px;
     max-width: 720px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 0 16px;
     min-width: 280px;
@@ -65,18 +65,18 @@ html {
 }
 
 section {
-  padding: 120px 0;
+  padding: 130px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   section {
     padding: 80px 0;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   section {
     padding: 40px 0;
   }
@@ -97,7 +97,7 @@ p, h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 32px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h1 {
     font-size: 30px;
   }
@@ -106,7 +106,7 @@ h1 {
 h2 {
   font-size: 28px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h2 {
     font-size: 26px;
   }
@@ -115,7 +115,7 @@ h2 {
 h3 {
   font-size: 24px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h3 {
     font-size: 22px;
   }
@@ -124,7 +124,7 @@ h3 {
 h4 {
   font-size: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h4 {
     font-size: 18px;
   }
@@ -133,7 +133,7 @@ h4 {
 h5, h6 {
   font-size: 18px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h5, h6 {
     font-size: 16px;
   }
@@ -203,6 +203,11 @@ h5, h6 {
 #header nav ul li a:hover::after {
   transform: scaleX(1);
 }
+@media screen and (max-width: 991px) {
+  #header nav ul {
+    display: none;
+  }
+}
 
 #footer {
   border-top: 1px solid rgba(114, 114, 126, 0.2);
@@ -218,17 +223,6 @@ h5, h6 {
 #footer .rights small {
   font-size: 12px;
   color: #EAEAEA;
-}
-#footer .social-media ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 24px;
-}
-#footer .social-media ul li img {
-  width: 28px;
-  height: 28px;
 }
 
 #main {
@@ -261,6 +255,12 @@ h5, h6 {
   color: #EAEAEA;
   margin: 0;
 }
+@media screen and (max-width: 991px) {
+  #main #presentation .info {
+    text-align: center;
+    width: 100%;
+  }
+}
 #main #presentation .image-wrapper {
   min-width: 320px;
   min-height: 320px;
@@ -269,6 +269,16 @@ h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 991px) {
+  #main #presentation .image-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main #presentation {
+    padding: 150px 0;
+  }
 }
 #main #about .container {
   display: flex;
@@ -323,6 +333,11 @@ h5, h6 {
   letter-spacing: 2px;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  #main #about .contacts .contact .info h3 {
+    font-size: 16px;
+  }
+}
 #main #about .contacts .contact .info a {
   letter-spacing: 1.2px;
   font-size: 16px;
@@ -344,6 +359,24 @@ h5, h6 {
 #main #about .contacts .contact .info a:hover:after {
   width: 100%;
 }
+@media screen and (max-width: 991px) {
+  #main #about .contacts .contact .info a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main #about .contacts .contact {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main #about .contacts {
+    gap: 32px;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
 #main #projects {
   background-color: #1D1D34;
 }
@@ -356,6 +389,11 @@ h5, h6 {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  #main #projects .projects-grid {
+    justify-content: center;
+  }
 }
 #main #projects .project {
   background-color: #161628;
@@ -421,7 +459,7 @@ h5, h6 {
   margin-top: -40px;
   transition-delay: 0.3s;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #main #projects .project {
     padding: 16px;
     max-width: 270px;
@@ -451,6 +489,11 @@ h5, h6 {
   justify-content: space-between;
   gap: 32px;
 }
+@media screen and (max-width: 991px) {
+  #main #services .grid {
+    justify-content: flex-start;
+  }
+}
 #main #services .service-card {
   width: 320px;
   height: 100%;
@@ -471,6 +514,18 @@ h5, h6 {
   width: 72px;
   height: 72px;
 }
+@media screen and (max-width: 1199px) {
+  #main #services .service-card .icon img {
+    width: 56px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #main #services .service-card .icon {
+    width: 56px;
+    height: 56px;
+  }
+}
 #main #services .service-card .description h3 {
   font-size: 22px;
   font-weight: bold;
@@ -485,6 +540,19 @@ h5, h6 {
   line-height: 25px;
   font-size: 14px;
   filter: brightness(0.8);
+}
+@media screen and (max-width: 1199px) {
+  #main #services .service-card {
+    width: 250px;
+    min-height: 420px;
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main #services .service-card {
+    width: 320px;
+    min-height: 340px;
+  }
 }
 #main #technologies {
   background-color: #1D1D34;
@@ -504,16 +572,20 @@ h5, h6 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   #main #technologies .grid {
     grid-template-columns: repeat(3, 220px);
     grid-gap: 32px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #main #technologies .grid {
     grid-template-columns: repeat(2, 240px);
-    grid-gap: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main #technologies .grid {
+    grid-template-columns: repeat(1, 280px);
   }
 }
 #main #technologies a {
@@ -534,16 +606,22 @@ h5, h6 {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   #main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
     width: 220px;
     height: 220px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
     width: 240px;
     height: 240px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main #technologies .tech-card-wrapper, #main #technologies .tech-card .face {
+    width: 280px;
+    height: 200px;
   }
 }
 #main #technologies .tech-card-wrapper {

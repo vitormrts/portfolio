@@ -61,6 +61,9 @@
           }
         }
       }
+      @include responsive-tablet {
+        display: none;
+      }
     }
   }
 }

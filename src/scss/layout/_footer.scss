@@ -14,17 +14,4 @@
       color: $platinum;
     }
   }
-  .social-media {
-    ul {
-      @include reset-list();
-      display: flex;
-      gap: 24px;
-      li {
-        img {
-          width: 28px;
-          height: 28px;
-        }
-      }
-    }
-  }
 }

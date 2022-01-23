@@ -25,6 +25,10 @@
         color: $platinum;
         margin: 0;
       }
+      @include responsive-tablet {
+        text-align: center;
+        width: 100%;
+      }
     }
     .image-wrapper {
       min-width: 320px;
@@ -34,6 +38,12 @@
         height: 100%;
         object-fit: cover;
       }
+      @include responsive-tablet {
+        display: none;
+      }
+    }
+    @include responsive-tablet {
+      padding: 150px 0;
     }
   }
   #about {
@@ -88,6 +98,9 @@
             margin-bottom: 8px;
             letter-spacing: 2px;
             text-align: center;
+            @include responsive-tablet {
+              font-size: 16px;
+            }
           }
           a {
             letter-spacing: 1.2px;
@@ -111,8 +124,20 @@
                 width: 100%;
               }
             }
+            @include responsive-tablet {
+              font-size: 14px;
+            }
           }
         }
+        @include responsive-tablet {
+          width: 300px;
+        }
+      }
+      @include responsive-tablet {
+        gap: 32px;
+        justify-content: start;
+        align-items: flex-start;
+        flex-wrap: wrap;
       }
     }
   }
@@ -127,6 +152,9 @@
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: space-between;
+      @include responsive-desktop {
+        justify-content: center;
+      }
     }
     .project {
       background-color: $xiketic;
@@ -221,6 +249,9 @@
       align-items: center;
       justify-content: space-between;
       gap: 32px;
+      @include responsive-tablet {
+        justify-content: flex-start;
+      }
     }
     .service-card {
       width: 320px;
@@ -239,6 +270,14 @@
         img {
           width: 72px;
           height: 72px;
+          @include responsive-desktop {
+            width: 56px;
+            height: 56px;
+          }
+        }
+        @include responsive-desktop {
+          width: 56px;
+          height: 56px;
         }
       }
       .description {
@@ -257,6 +296,15 @@
           font-size: 14px;
           filter: brightness(0.8);
         }
+      }
+      @include responsive-desktop {
+        width: 250px;
+        min-height: 420px;
+        padding: 24px;
+      }
+      @include responsive-tablet {
+        width: 320px;
+        min-height: 340px;
       }
     }
   }
@@ -282,7 +330,9 @@
       }
       @include responsive-tablet {
         grid-template-columns: repeat(2, 240px);
-        grid-gap: 32px;
+      }
+      @include responsive-mobile {
+        grid-template-columns: repeat(1, 280px);
       }
     }
     a {
@@ -308,6 +358,10 @@
         @include responsive-tablet {
           width: 240px;
           height: 240px;
+        }
+        @include responsive-mobile {
+          width: 280px;
+          height: 200px;
         }
       }
       &-wrapper {
